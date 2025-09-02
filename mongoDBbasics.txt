@@ -84,3 +84,10 @@ db.getCollection("posts").find({"author.name":"Emily Watson"})
 db.getCollection("posts").find({comments: {$gt: 0}})
 
 db.getCollection("posts").find({comments: {$lt: 5}})
+
+db.getCollection("posts").find({
+    $and:[
+        {comments: {$lt:5}},
+        {comments: {$gt: 0}}
+    ]
+})
