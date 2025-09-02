@@ -78,3 +78,5 @@ const =""
 db.getCollection("posts").findOne({postId: 3015})
 
 db.getCollection("posts").findOne({comments : (0)})
+
+db.getCollection("posts").find({"author.name":"Emily Watson"})
