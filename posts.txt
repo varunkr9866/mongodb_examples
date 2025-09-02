@@ -1,0 +1,16 @@
+--posts--
+//insertion methods
+{
+ title:"what is the best way to learn JavaScript from the ground up?",
+ postId:NumberInt(3511),
+ comments:10,
+ shared:true,
+tags:[
+ "JavaScript"
+ "Programming"
+],
+ author:{
+  name:"Milk Forester"
+  nicename:"mikef"
+ }
+}
