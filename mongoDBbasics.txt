@@ -107,3 +107,5 @@ db.getCollection("posts").find({
        "coding"
      ]}
 })
+
+db.getCollection("posts").find({}).limit(1)
