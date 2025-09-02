@@ -91,3 +91,10 @@ db.getCollection("posts").find({
         {comments: {$gt: 0}}
     ]
 })
+
+db.getCollection("posts").find({
+    $and: [
+        {comments: 2},
+        {tags: "programming"}
+    ]
+})
