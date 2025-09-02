@@ -98,3 +98,12 @@ db.getCollection("posts").find({
         {tags: "programming"}
     ]
 })
+
+db.getCollection("posts").find({
+   tags: {
+       $in:
+     [
+       "programming",
+       "coding"
+     ]}
+})
