@@ -111,3 +111,7 @@ db.getCollection("posts").find({
 db.getCollection("posts").find({}).limit(1)
 
 db.getCollection("posts").find({}).skip(2)
+
+db.getCollection("posts").find({}).sort({comments: 1})
+
+db.getCollection("posts").find({}).sort({comments: -1})
