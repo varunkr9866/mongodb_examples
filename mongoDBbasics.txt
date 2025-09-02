@@ -6,6 +6,7 @@ db.createcollection("posts")
 show collections
 
 
+const =""
 {
   title: "What is the best way to learn JavaScript from the ground up?",
   postId: NumberInt(3511),
@@ -74,3 +75,4 @@ show collections
   }
 }
 
+//db.getCollection("posts").findOne({postId: 3015})
