@@ -12,4 +12,6 @@ db.version
 
 db.version()
 
+db.getCollection("test").insertOne({a:"varun",b:true})
+
 
