@@ -7,3 +7,5 @@ typeof obj.a;
 typeof obj.d;
 
 new Date()
+
+new Date("2018-08-08")
