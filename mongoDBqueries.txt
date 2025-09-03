@@ -1,1 +1,3 @@
 db.getCollection('persons').find({}).count()
+
+db.getCollection('persons').find({age:20})
