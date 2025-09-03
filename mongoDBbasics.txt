@@ -134,3 +134,9 @@ db.posts.updateMany(
     {tags:[]},
     {$unset:{tags: 1}}
 )
+
+
+db.posts.updateOne(
+    {postId:8451},
+    {$inc:{comments: 1}}
+)
