@@ -9,3 +9,6 @@ typeof obj.d;
 new Date()
 
 new Date("2018-08-08")
+
+new Date("2018 August 8")
+
