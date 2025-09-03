@@ -148,3 +148,7 @@ db.getCollection("posts").insertOne({postId:222})
 db.getCollection("posts").insertOne({postId:333})
 
 db.getCollection("posts").deleteOne({postId:111})
+
+db.posts.aggregate([
+    {$group:{_id:"$author.name"}}
+])
