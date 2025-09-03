@@ -1,3 +1,7 @@
 var obj = {a: "",b: {} ,c: [],d: true};
 
 printjson(obj);
+
+typeof obj.a;
+
+typeof obj.d;
