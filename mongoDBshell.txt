@@ -1,0 +1,3 @@
+interpreterVersion()
+
+db.serverBuildInfo()
