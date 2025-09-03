@@ -12,6 +12,5 @@ new Date("2018-08-08")
 
 new Date("2018 August 8")
 
-obj = {a: 10,b: 0 ,c: 5.98,d:NumberInt(10),e:NumberLong(23)};
-
+obj = {a: 10,b: 0 ,c: 5.75,d:NumberInt(10),e:NumberLong(23)};
 
