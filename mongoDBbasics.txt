@@ -152,3 +152,9 @@ db.getCollection("posts").deleteOne({postId:111})
 db.posts.aggregate([
     {$group:{_id:"$author.name"}}
 ])
+
+db.posts.aggregate([
+    {$group:{_id:"$author.nickname"}}
+])
+
+db.posts.find({_id: ObjectId("68b6ddcb0189ca2c9f44152e")})
