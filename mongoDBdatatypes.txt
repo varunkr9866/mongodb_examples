@@ -5,3 +5,5 @@ printjson(obj);
 typeof obj.a;
 
 typeof obj.d;
+
+new Date()
