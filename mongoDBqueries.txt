@@ -7,3 +7,5 @@ db.getCollection('persons').find({fruit:{"$ne":apple})
 db.getCollection('persons').find({"favoriteFruit":{"$ne":"orange"}})
 
 db.getCollection('persons').find({"eyeColor":{"$in":["green","blue"]}})
+
+db.getCollection('persons').find({and:["gender":"male"]},{"age":25]})
