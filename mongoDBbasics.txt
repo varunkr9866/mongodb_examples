@@ -140,3 +140,9 @@ db.posts.updateOne(
     {postId:8451},
     {$inc:{comments: 1}}
 )
+
+db.getCollection("posts").insertOne({postId:111})
+
+db.getCollection("posts").insertOne({postId:222})
+
+db.getCollection("posts").insertOne({postId:333})
