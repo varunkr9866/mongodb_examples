@@ -1,0 +1,3 @@
+var obj = {a: "",b: {} ,c: [],d: true};
+
+printjson(obj);
