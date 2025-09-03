@@ -128,3 +128,9 @@ db.posts.updateOne(
     {postId:1151},
     {$set:{title:"what is the salary of a senior frontend deeveloper?"}}
   )
+
+
+db.posts.updateMany(
+    {tags:[]},
+    {$unset:{tags: 1}}
+)
