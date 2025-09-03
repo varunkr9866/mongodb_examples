@@ -1,3 +1,8 @@
 interpreterVersion()
 
 db.serverBuildInfo()
+
+mongod --version
+
+mongo --version
+
