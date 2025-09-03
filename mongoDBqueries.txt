@@ -9,3 +9,8 @@ db.getCollection('persons').find({"favoriteFruit":{"$ne":"orange"}})
 db.getCollection('persons').find({"eyeColor":{"$in":["green","blue"]}})
 
 db.getCollection('persons').find({and:["gender":"male"]},{"age":25]})
+
+db.getCollection('persons').find({"age":{"$ne":20},"age":{"$gte":30}]})
+
+
+db.getCollection('persons').find({"$and":["age":20,"colour":"green"]})
