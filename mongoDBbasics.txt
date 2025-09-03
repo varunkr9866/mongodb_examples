@@ -146,3 +146,5 @@ db.getCollection("posts").insertOne({postId:111})
 db.getCollection("posts").insertOne({postId:222})
 
 db.getCollection("posts").insertOne({postId:333})
+
+db.getCollection("posts").deleteOne({postId:111})
