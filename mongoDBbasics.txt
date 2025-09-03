@@ -122,3 +122,9 @@ db.posts.updateOne(
     {postId:2618},
     {$set:{shared:true}}
   )
+
+
+  db.posts.updateOne(
+    {postId:1151},
+    {$set:{title:"what is the salary of a senior frontend deeveloper?"}}
+  )
