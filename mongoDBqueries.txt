@@ -21,3 +21,7 @@ db.getCollection('persons').find({"age":{"$in":[20,27]}})
 
 
 db.getCollection('persons').find({"Company.title":"SHEPARD"})
+
+db.getCollection('persons').find({tags:"ad"})
+
+db.getCollection('persons').find({"tags.0":"ad"})
