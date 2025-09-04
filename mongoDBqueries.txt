@@ -17,3 +17,6 @@ db.getCollection('persons').find({age:20},{colour:"blue"})
 
 db.getCollection('persons').find({$or["gender":"male",{"age":25}]})
 
+db.getCollection('persons').find({"age":{"$in":[20,27]}})
+
+
