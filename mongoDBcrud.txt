@@ -61,3 +61,11 @@ db.cursor.find()
 //WE CAN CHANGE BATCH SIZE AND ITTERATOR SIZE BY USING HELP METHOD IN DB SHELL
 
 //TO CHANGE BATCH SIZE USE METHOD BATCHSIZE(50)
+
+var cursor =db.posts.find()
+
+cursor.next()
+
+cursor.hasnext()
+
+cursor.objsLeftInBatch()
