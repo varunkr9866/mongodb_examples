@@ -69,3 +69,6 @@ cursor.next()
 cursor.hasnext()
 
 cursor.objsLeftInBatch()
+
+//ITERATOR METHODS
+
