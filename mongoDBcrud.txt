@@ -57,3 +57,6 @@ for (let i =1, i<=100,i++){
 db.cursor.insertMany(docs)
 
 db.cursor.find()
+
+//WE CAN CHANGE BATCH SIZE AND ITTERATOR SIZE BY USING HELP METHOD IN DB SHELL
+
