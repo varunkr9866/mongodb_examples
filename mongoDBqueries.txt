@@ -33,3 +33,8 @@ db.getCollection('persons').find({tags:{"$size":4}})
 db.getCollection('persons').find({friends:"$elemMatch:{name:"bob",{registerd:false}}"}})
 
 db.getCollection('persons').find({friends:"$elemMatch:{registerd:false,name:"Lora"}"}})
+
+
+//ELEMENT OPERATORS
+
+db.getCollection('persons').find({tags:{$exist:true}})
