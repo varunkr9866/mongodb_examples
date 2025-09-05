@@ -33,3 +33,7 @@ db.posts.insertOne({})
 db.posts.insertMany([])
 
 db.posts.remove({})
+
+db.posts.insertOne({})
+
+db.posts.insertMany([{},{},{}])
