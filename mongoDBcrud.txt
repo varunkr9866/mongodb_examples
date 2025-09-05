@@ -15,3 +15,13 @@ show collections
 use local
 
 show collections
+
+//CREATE AND DELETE DATABASE AND COLLECTION
+
+use varun
+
+db.createCollection("varuncollection")
+
+db.getCollection("varuncollection").drop()
+
+db.dropDatabase()
