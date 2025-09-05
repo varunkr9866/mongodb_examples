@@ -1,0 +1,17 @@
+//CRUD OPERATIONS
+
+db
+
+show collections
+
+show dbs
+
+db.version()
+
+use config
+
+show collections
+
+use local
+
+show collections
