@@ -45,3 +45,7 @@ db.getCollection('persons').find({posts:{$type:int}})
 //FILTER FIELDS
 
 db.getCollection('persons').find({},{name:1,age:0})
+
+//REGEX
+
+db.getCollection('persons').find({name:{$regex:"^Aur,$option: "i"}})
