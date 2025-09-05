@@ -31,3 +31,5 @@ db.getCollection('persons').find({tags:{"$all":["ad","eu"]})
 db.getCollection('persons').find({tags:{"$size":4}})
 
 db.getCollection('persons').find({friends:"$elemMatch:{name:"bob",{registerd:false}}"}})
+
+db.getCollection('persons').find({friends:"$elemMatch:{registerd:false,name:"Lora"}"}})
