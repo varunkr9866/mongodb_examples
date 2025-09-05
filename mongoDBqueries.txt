@@ -38,3 +38,7 @@ db.getCollection('persons').find({friends:"$elemMatch:{registerd:false,name:"Lor
 //ELEMENT OPERATORS
 
 db.getCollection('persons').find({tags:{$exist:true}})
+
+
+db.getCollection('persons').find({posts:{$type:int}})
+
