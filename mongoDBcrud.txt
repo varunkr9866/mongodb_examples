@@ -41,3 +41,13 @@ db.posts.insertMany([{},{},{}])
 //DUPLICATE ID ERROR
 
 //ITS NOT POSSIBLE TO CREATE A OBJECT WITH SAME ID
+
+//CURSOR
+
+var docs= [];
+for (let i =1, i<=100,i++){
+	obj ={
+	index:NumberInt(i)
+	};
+	docs.push(obj)	
+}
