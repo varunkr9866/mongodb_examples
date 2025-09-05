@@ -42,3 +42,6 @@ db.getCollection('persons').find({tags:{$exist:true}})
 
 db.getCollection('persons').find({posts:{$type:int}})
 
+//FILTER FIELDS
+
+db.getCollection('persons').find({},{name:1,age:25})
