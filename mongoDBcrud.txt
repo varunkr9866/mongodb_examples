@@ -37,3 +37,6 @@ db.posts.remove({})
 db.posts.insertOne({})
 
 db.posts.insertMany([{},{},{}])
+
+//DUPLICATE ID ERROR
+
