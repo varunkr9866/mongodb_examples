@@ -40,3 +40,4 @@ db.posts.insertMany([{},{},{}])
 
 //DUPLICATE ID ERROR
 
+//ITS NOT POSSIBLE TO CREATE A OBJECT WITH SAME ID
