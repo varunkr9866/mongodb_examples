@@ -25,3 +25,9 @@ db.createCollection("varuncollection")
 db.getCollection("varuncollection").drop()
 
 db.dropDatabase()
+
+//INSERTION METHOD
+
+db.posts.insertOne({})
+
+db.posts.insertMany([])
