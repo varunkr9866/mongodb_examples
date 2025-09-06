@@ -70,5 +70,6 @@ cursor.hasnext()
 
 cursor.objsLeftInBatch()
 
-//ITERATOR METHODS
+var cursor = db.collection('cursor').find()
+cursor.toArray()
 
