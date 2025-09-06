@@ -82,3 +82,6 @@ cursor.forEach(doc => print('Index of the doc is ${doc.index}'))
 var cursor = db.collection('cursor').find({})
 cursor.count()
 
+var cursor = db.collection('cursor').find({})
+cursor.limit(2)
+
