@@ -2,6 +2,20 @@ db.getCollection("shoppingCart").insertMany([{index:1},{index:2},{index:3},{inde
 
 db.getCollection("shoppingCart").insertOne({index:6})
 
+db.getCollection("shoppingCart").update(
+   {index:3},
+   {$set:{
+     cartId:NumberInt(325),
+     customer:{
+	name:"Mike",
+	email:"mike@test.com",
+	age:NumberInt(27)
+      },
+      cart:[]
+     }
+    }
+  );
+
 
 
 
