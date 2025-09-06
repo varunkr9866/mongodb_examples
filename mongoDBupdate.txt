@@ -16,6 +16,16 @@ db.getCollection("shoppingCart").update(
     }
   );
 
+db.shoppingCart.update(
+ { index: 4},
+ {
+   $unset:{
+     processed:1,
+     "customer.preferences": 1
+     }
+   }
+ );
+
 
 
 
