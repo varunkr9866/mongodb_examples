@@ -85,3 +85,6 @@ cursor.count()
 var cursor = db.collection('cursor').find({})
 cursor.limit(2)
 
+var cursor = db.collection('cursor').find({})
+cursor.skip(5)
+
