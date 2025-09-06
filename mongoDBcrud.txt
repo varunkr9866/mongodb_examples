@@ -88,3 +88,6 @@ cursor.limit(2)
 var cursor = db.collection('cursor').find({})
 cursor.skip(5)
 
+var cursor = db.collection('cursor').find({})
+cursor.sort({name: 1,age: -1})
+
