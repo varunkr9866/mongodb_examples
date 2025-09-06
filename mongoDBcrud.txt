@@ -93,3 +93,5 @@ cursor.sort({name: 1,age: -1})
 
 db.collection('cursor').find().limit(10),skip(5),sort({index: -1})
 
+db.collection('cursor').findOne({})
+
