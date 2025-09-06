@@ -73,3 +73,6 @@ cursor.objsLeftInBatch()
 var cursor = db.collection('cursor').find()
 cursor.toArray()
 
+var cursor = db.collection('cursor').find()
+cursor.forEach(printjson)
+
