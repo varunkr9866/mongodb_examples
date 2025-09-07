@@ -98,3 +98,10 @@ db.getCollection("shoppingCart")
      {}
   );
 
+db.getCollection("shoppingCart")
+.updateOne({cartId: 325},
+{
+$currentDate:{
+createdAt: true
+}
+);
