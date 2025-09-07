@@ -84,4 +84,17 @@ db.getCollection("shoppingCart")
 
 
 
+db.getCollection("shoppingCart")
+.updateMany(
+//query
+   {cartId:{$exists: true}},
+//update
+   {$rename:{cartId: "orderId"
+   }
+   },
+    {$unset:{newOrder:1
+   }}
+//update options
+     {}
+  );
 
