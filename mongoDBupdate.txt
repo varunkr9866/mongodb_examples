@@ -27,5 +27,18 @@ db.shoppingCart.update(
  );
 
 
+db.getCollection("shoppingCart")
+.updateOne(
+//query
+   {cartId: 325},
+//update
+   {$set:{
+      processed :true
+      }},
+//update options
+     {}
+  );
+
+
 
 
