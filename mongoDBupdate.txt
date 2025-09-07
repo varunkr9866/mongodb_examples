@@ -57,14 +57,30 @@ db.getCollection("shoppingCart")
 .replaceOne(
 //query
    {index: 1},
-//update
+//replacement
    {
      index: 1,
      processed: false,
-     cart :[]
+     cart :[item1,item2]
     }
   );
 
+
+db.getCollection("shoppingCart")
+.updateOne(
+//query
+   {index: 4},
+//update
+   {$set:{cartId: NumberInt(345),
+    customer.name: "Samantha Lorens",
+    customer.email: "slorens@test.com"
+   }
+   },
+    {$unset:{newOrder:1
+   }}
+//update options
+     {}
+  );
 
 
 
