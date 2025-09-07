@@ -105,3 +105,11 @@ $currentDate:{
 createdAt: true
 }
 );
+
+db.getCollection("shoppingCart")
+.updateMany({updatedAt:{$exists: false}},
+{
+$currentDate:{
+createdAt: true
+}
+);
