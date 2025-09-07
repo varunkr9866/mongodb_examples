@@ -40,5 +40,18 @@ db.getCollection("shoppingCart")
   );
 
 
+db.getCollection("shoppingCart")
+.updateMany(
+//query
+   {cartId: {$exists:false}},
+//update
+   {$set:{
+      cart:[]
+      }},
+//update options
+     {}
+  );
+
+
 
 
