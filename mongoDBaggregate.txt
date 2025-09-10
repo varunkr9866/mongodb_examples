@@ -6,3 +6,9 @@ db.persons.aggregate([
  {$match:{age:{"$gt":30}}}
 ])
 
+//Group Stage
+
+db.persons.aggregate([
+ {$group:{_id:"$age"}}
+])
+
