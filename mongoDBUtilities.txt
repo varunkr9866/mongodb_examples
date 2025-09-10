@@ -41,3 +41,7 @@ mongorestore--host<hostname> --username<username> --password<password> --authent
 mongostore
 
 mongodump--host<hostname> --username<username> --password<password> --authenticationDatabase<authDb> --archive=<fileName> --gzip
+
+//MONGODBSTAT
+mongostat--host<hostname> --username<username> --password<password> --authenticationDatabase<authDb> 
+
