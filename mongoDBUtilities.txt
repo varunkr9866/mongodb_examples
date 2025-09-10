@@ -28,4 +28,5 @@ mongoimport--db<db> --collection<collection> --out<filename.json> --type=csv
 mongodump--host<hostname> --username<username> --password<password> --authenticationDatabase<authDb> --db<dumpdatabase> --collection<dumpCollection> --out<directoryName>
 
 
+mongodump--host<hostname> --username<username> --password<password> --authenticationDatabase<authDb> --db<dumpdatabase> --collection<dumpCollection> --archive=<fileName> --gzip
 
