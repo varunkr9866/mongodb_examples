@@ -9,3 +9,7 @@ mongoexport--host<hostname> --username<username> --password<password> --authenti
 mongoexport--host<hostname> --username<username> --password<password> --authenticationDatabase<authDb> --db<db> --collection<collection> --out<filename.json> --query'{<query>}'
 
 mongoexport--db<db> --collection<collection> --out<filename.json>
+
+//import utilite
+mongoimport--host<hostname> --username<username> --password<password> --authenticationDatabase<authDb> --db<db> --collection<collection> --out<filename.json>
+
