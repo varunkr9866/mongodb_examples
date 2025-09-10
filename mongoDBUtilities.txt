@@ -18,3 +18,7 @@ mongoimport--db<db> --collection<collection> --out<filename.json>
 
 mongoimport--db<db> --collection<collection> --out<filename.json> --jsonArray
 
+
+mongoimport--db<db> --collection<collection> --out<filename.json> --query'{<query>}'
+
+
