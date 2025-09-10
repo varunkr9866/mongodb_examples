@@ -1,2 +1,8 @@
  //Aggregate Expression
 "$<fieldName>"
+
+//Match Stage
+db.persons.aggregate([
+ {$match:{age:{"$gt":30}}}
+])
+
