@@ -13,3 +13,4 @@ mongoexport--db<db> --collection<collection> --out<filename.json>
 //import utilite
 mongoimport--host<hostname> --username<username> --password<password> --authenticationDatabase<authDb> --db<db> --collection<collection> --out<filename.json>
 
+mongoexport--db<db> --collection<collection> --out<filename.json>
