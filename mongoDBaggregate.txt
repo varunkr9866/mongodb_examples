@@ -16,5 +16,14 @@ db.persons.aggregate([
  {$group:{_id:{age:"$age",gender:"$gender"}}}
 ])
 
+//Match and Group Stages Together
+
+db.persons.aggregate([
+//Stage 1
+ {$match:{favourateFruit:"banana"}},
+//Stage 2
+{$group:{_id:{age:"$age",eyeColour:"$eyeColour"}}}
+])
+
 
 
