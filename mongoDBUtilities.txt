@@ -30,3 +30,7 @@ mongodump--host<hostname> --username<username> --password<password> --authentica
 
 mongodump--host<hostname> --username<username> --password<password> --authenticationDatabase<authDb> --db<dumpdatabase> --collection<dumpCollection> --archive=<fileName> --gzip
 
+//restore
+
+mongodump--host<hostname> --username<username> --password<password> --authenticationDatabase<authDb> --dir<directoryName>
+
