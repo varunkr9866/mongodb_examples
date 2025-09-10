@@ -21,4 +21,7 @@ mongoimport--db<db> --collection<collection> --out<filename.json> --jsonArray
 
 mongoimport--db<db> --collection<collection> --out<filename.json> --query'{<query>}'
 
+mongoimport--db<db> --collection<collection> --out<filename.json> --type=csv
+
+
 
