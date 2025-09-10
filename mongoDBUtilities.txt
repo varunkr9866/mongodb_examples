@@ -25,6 +25,9 @@ mongoimport--db<db> --collection<collection> --out<filename.json> --type=csv
 
 //MONGODUMP
 
+//(LOCAL)
+mongodump
+
 mongodump--host<hostname> --username<username> --password<password> --authenticationDatabase<authDb> --db<dumpdatabase> --collection<dumpCollection> --out<directoryName>
 
 
@@ -36,3 +39,5 @@ mongorestore--host<hostname> --username<username> --password<password> --authent
 
 //(LOCAL)
 mongostore
+
+mongodump--host<hostname> --username<username> --password<password> --authenticationDatabase<authDb> --archive=<fileName> --gzip
