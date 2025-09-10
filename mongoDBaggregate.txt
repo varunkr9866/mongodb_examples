@@ -25,5 +25,13 @@ db.persons.aggregate([
 {$group:{_id:{age:"$age",eyeColour:"$eyeColour"}}}
 ])
 
+//Different Order
+db.persons.aggregate([
+//Stage 1
+{$group:{_id:{age:"$age",eyeColour:"$eyeColour"}}},
+//Stage 2
+ {$match:{"_id.age":{$gt:30}}}
+])
+
 
 
