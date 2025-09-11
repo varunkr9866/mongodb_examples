@@ -34,4 +34,8 @@ db.persons.aggregate([
 ])
 
 
+//count
 
+db.persons.aggregate([
+ {$count:"allDocumentsCount"}
+])
