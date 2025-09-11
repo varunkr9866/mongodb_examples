@@ -57,3 +57,20 @@ db.persons.aggregate([
  {$group:{_id:{eyecolor:"$eyecolor",favouriteFruite:"$favouriteFruite"}}},
  {$sort:{"_id.eyeColor": 1,"_id.favouriteFruit" : -1}}
 ])
+
+//Project Stage
+ db.persons.aggregate([
+ {$project:{isActive: 0,name:0,gender:0}}
+])
+
+//Limit Stage
+{$limit:<number>}
+
+//unwind stage
+
+ db.persons.aggregate([
+ {$unwind : "$tags"}
+ {$project:{name: 1,index :1,tags: 1}}
+])
+
+
