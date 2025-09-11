@@ -41,3 +41,19 @@ db.persons.aggregate([
 ])
 
 //group & Count
+
+db.persons.aggregate([
+ {$group:{_id:"$Company.location.country"}},
+ {$count:"Country Count"}
+])
+
+//Sort
+db.persons.aggregate([
+ {$Sort:{name: 1}}
+])
+
+db.persons.aggregate([
+ {$match{eyeColour:{$ne : "blue"}}},
+ {$group:{_id:{eyecolor:"$eyecolor",favouriteFruite:"$favouriteFruite"}}},
+ {$sort:{"_id.eyeColor": 1,"_id.favouriteFruit" : -1}}
+])
