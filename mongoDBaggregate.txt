@@ -39,3 +39,5 @@ db.persons.aggregate([
 db.persons.aggregate([
  {$count:"allDocumentsCount"}
 ])
+
+//group & Count
